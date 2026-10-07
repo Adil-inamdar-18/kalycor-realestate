@@ -1,8 +1,0 @@
-@tailwind base;@tailwind components;@tailwind utilities;
-html{scroll-behavior:smooth}body{@apply bg-paper text-ink font-sans antialiased overflow-x-hidden}
-:focus-visible{outline:2px solid #2E6B63;outline-offset:3px}
-.grid-lines{background-image:linear-gradient(#ffffff14 1px,transparent 1px),linear-gradient(90deg,#ffffff14 1px,transparent 1px);background-size:64px 64px}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-@keyframes tw{0%,100%{opacity:.25}50%{opacity:1}}
-.win-lit{animation:tw 4s ease-in-out infinite}.win-lit:nth-child(3n){animation-delay:1.3s}.win-lit:nth-child(4n){animation-delay:2.4s}
-@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}.floaty{animation:floaty 9s ease-in-out infinite}
