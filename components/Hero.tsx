@@ -1,10 +1,10 @@
-import PropertySearch from './PropertySearch';
-import { ShieldCheck, Sparkles, Compass } from 'lucide-react';
+import PropertySearch from "./PropertySearch";
+import { ShieldCheck, Sparkles, Compass } from "lucide-react";
 
 const trustItems = [
-  { icon: ShieldCheck, label: 'Verified Properties' },
-  { icon: Sparkles, label: 'Curated Listings' },
-  { icon: Compass, label: 'Trusted Guidance' },
+  { icon: ShieldCheck, label: "Verified Properties" },
+  { icon: Sparkles, label: "Curated Listings" },
+  { icon: Compass, label: "Trusted Guidance" },
 ];
 
 export default function Hero() {
@@ -17,7 +17,7 @@ export default function Hero() {
           alt="Luxury modern villa with lush greenery"
           className="h-full w-full object-cover animate-slow-zoom"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/25 to-black/65" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/95" />
       </div>
 
       {/* Content */}
@@ -29,7 +29,7 @@ export default function Hero() {
           <h1 className="mt-6 font-serif text-4xl font-bold leading-[1.05] text-white text-balance sm:text-5xl lg:text-[64px] lg:leading-[1.05]">
             Find a place you&apos;ll love to call home.
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg lg:text-xl">
+          <p className="mt-6 max-w-xl text-base font-semibold leading-relaxed text-white drop-shadow-md sm:text-lg lg:text-xl">
             Discover exceptional homes, apartments and commercial properties in
             locations that matter to you.
           </p>
