@@ -1,11 +1,10 @@
-import PropertyGrid from './PropertyGrid';
-import { ArrowRight } from 'lucide-react';
+import PropertyGrid from "./PropertyGrid";
+import { ArrowRight } from "lucide-react";
 
 export default function FeaturedProperties() {
   return (
     <section id="featured" className="bg-background py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        {/* Header */}
         <div className="mb-14 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <div className="max-w-2xl">
             <span className="text-[11px] font-semibold uppercase tracking-eyebrow text-accent">
@@ -25,10 +24,8 @@ export default function FeaturedProperties() {
           </button>
         </div>
 
-        {/* Grid */}
         <PropertyGrid />
 
-        {/* Mobile View All */}
         <div className="mt-8 text-center sm:hidden">
           <button className="border border-border px-5 py-2.5 text-sm font-medium text-foreground">
             View All Properties

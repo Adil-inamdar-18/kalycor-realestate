@@ -6,12 +6,12 @@ import {
   MapPin,
   BadgeCheck,
   CheckCircle2,
-} from 'lucide-react';
+} from "lucide-react";
 
 const highlights = [
-  'Private courtyard garden',
-  'Floor-to-ceiling glazing',
-  'Covered parking for 2 cars',
+  "Private courtyard garden",
+  "Floor-to-ceiling glazing",
+  "Covered parking for 2 cars",
 ];
 
 export default function PropertySpotlight() {
@@ -19,7 +19,6 @@ export default function PropertySpotlight() {
     <section id="spotlight" className="bg-secondary/40 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          {/* Image */}
           <div className="relative order-1 aspect-[4/5] overflow-hidden shadow-xl lg:order-1 sm:aspect-[5/4] lg:aspect-[4/5]">
             <img
               src="https://images.pexels.com/photos/8134745/pexels-photo-8134745.jpeg?auto=compress&cs=tinysrgb&w=1000"
@@ -27,7 +26,6 @@ export default function PropertySpotlight() {
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-            {/* Price badge on image */}
             <div className="absolute bottom-5 left-5 bg-white/95 px-5 py-3 shadow-lg backdrop-blur-sm">
               <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
                 Asking Price
@@ -38,7 +36,6 @@ export default function PropertySpotlight() {
             </div>
           </div>
 
-          {/* Info */}
           <div className="order-2">
             <div className="flex items-center gap-2">
               <span className="text-[11px] font-semibold uppercase tracking-eyebrow text-accent">
@@ -59,7 +56,6 @@ export default function PropertySpotlight() {
               Pune, Maharashtra
             </div>
 
-            {/* Details */}
             <div className="mt-8 flex flex-wrap gap-8 border-y border-border py-6">
               <div className="flex flex-col gap-1">
                 <BedDouble className="h-5 w-5 text-accent" />
@@ -84,7 +80,6 @@ export default function PropertySpotlight() {
               </div>
             </div>
 
-            {/* Description */}
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               A contemporary residence designed around natural light, open
               spaces and private gardens. Every corner of this villa is crafted
@@ -92,7 +87,6 @@ export default function PropertySpotlight() {
               of a true home.
             </p>
 
-            {/* Highlights */}
             <ul className="mt-6 flex flex-col gap-2.5">
               {highlights.map((hl) => (
                 <li
@@ -105,7 +99,6 @@ export default function PropertySpotlight() {
               ))}
             </ul>
 
-            {/* CTA */}
             <button className="mt-8 inline-flex items-center gap-2 bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all duration-300 hover:bg-primary/90 hover:shadow-xl">
               Explore Property
               <ArrowRight className="h-4 w-4" />

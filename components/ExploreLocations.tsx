@@ -1,11 +1,10 @@
-import { locations } from '@/lib/locations';
-import { ArrowRight, MapPin } from 'lucide-react';
+import { locations } from "@/lib/locations";
+import { ArrowRight, MapPin } from "lucide-react";
 
 export default function ExploreLocations() {
   return (
     <section id="locations" className="bg-background py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        {/* Header */}
         <div className="mb-14 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <div className="max-w-2xl">
             <span className="text-[11px] font-semibold uppercase tracking-eyebrow text-accent">
@@ -25,7 +24,6 @@ export default function ExploreLocations() {
           </button>
         </div>
 
-        {/* Grid */}
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {locations.map((loc) => (
             <a
@@ -40,7 +38,6 @@ export default function ExploreLocations() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent transition-all duration-500 group-hover:from-black/90" />
 
-              {/* Top-right arrow */}
               <span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm transition-all duration-300 group-hover:border-accent group-hover:bg-accent group-hover:scale-110">
                 <ArrowRight className="h-4 w-4 text-white" />
               </span>

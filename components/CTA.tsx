@@ -1,9 +1,8 @@
-import { ArrowRight, Plus } from 'lucide-react';
+import { ArrowRight, Plus } from "lucide-react";
 
 export default function CTA() {
   return (
     <section className="relative flex items-center justify-center overflow-hidden py-28 lg:py-40">
-      {/* Background */}
       <div className="absolute inset-0">
         <img
           src="https://images.pexels.com/photos/14603131/pexels-photo-14603131.jpeg?auto=compress&cs=tinysrgb&w=1920"
@@ -13,7 +12,6 @@ export default function CTA() {
         <div className="absolute inset-0 bg-gradient-to-b from-primary/85 via-primary/75 to-primary/85" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 mx-auto max-w-3xl px-5 text-center lg:px-8">
         <span className="text-[11px] font-semibold uppercase tracking-eyebrow text-white/60">
           Start Your Journey
