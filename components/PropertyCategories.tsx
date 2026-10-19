@@ -1,22 +1,20 @@
-import { categories } from '@/lib/categories';
-import { ArrowRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { categories } from "@/lib/categories";
+import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-// Asymmetric layout: first item tall, others varied
 const layoutClasses = [
-  'lg:col-span-2 lg:row-span-2 aspect-[5/3] lg:aspect-auto',
-  'aspect-[5/3]',
-  'aspect-[5/3]',
-  'aspect-[5/3]',
-  'aspect-[5/3]',
-  'aspect-[5/3] lg:col-span-2',
+  "lg:col-span-2 lg:row-span-2 aspect-[5/3] lg:aspect-auto",
+  "aspect-[5/3]",
+  "aspect-[5/3]",
+  "aspect-[5/3]",
+  "aspect-[5/3]",
+  "aspect-[5/3] lg:col-span-2",
 ];
 
 export default function PropertyCategories() {
   return (
     <section id="categories" className="bg-secondary/40 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        {/* Header */}
         <div className="mb-14 max-w-2xl">
           <span className="text-[11px] font-semibold uppercase tracking-eyebrow text-accent">
             Browse by Type
@@ -30,15 +28,14 @@ export default function PropertyCategories() {
           </p>
         </div>
 
-        {/* Editorial Grid */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-3">
           {categories.map((cat, i) => (
             <a
               key={cat.id}
               href="#featured"
               className={cn(
-                'group relative overflow-hidden shadow-sm',
-                layoutClasses[i] || 'aspect-[5/3]'
+                "group relative overflow-hidden shadow-sm",
+                layoutClasses[i] || "aspect-[5/3]",
               )}
             >
               <img
@@ -54,8 +51,8 @@ export default function PropertyCategories() {
                 <div className="mt-1.5 flex items-center justify-between">
                   <h3
                     className={cn(
-                      'font-serif font-bold text-white',
-                      i === 0 ? 'text-3xl lg:text-4xl' : 'text-xl lg:text-2xl'
+                      "font-serif font-bold text-white",
+                      i === 0 ? "text-3xl lg:text-4xl" : "text-xl lg:text-2xl",
                     )}
                   >
                     {cat.name}

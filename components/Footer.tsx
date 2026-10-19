@@ -7,42 +7,40 @@ import {
   MapPin,
   Mail,
   Phone,
-} from 'lucide-react';
+} from "lucide-react";
 
 const columns = [
   {
-    title: 'Explore',
-    links: ['Buy', 'Rent', 'Commercial', 'New Projects'],
+    title: "Explore",
+    links: ["Buy", "Rent", "Commercial", "New Projects"],
   },
   {
-    title: 'Locations',
-    links: ['Mumbai', 'Pune', 'Nagpur', 'Bengaluru', 'Hyderabad'],
+    title: "Locations",
+    links: ["Mumbai", "Pune", "Nagpur", "Bengaluru", "Hyderabad"],
   },
   {
-    title: 'Company',
-    links: ['About', 'Our Team', 'Careers', 'Contact'],
+    title: "Company",
+    links: ["About", "Our Team", "Careers", "Contact"],
   },
   {
-    title: 'Resources',
-    links: ['Property Guide', 'Market Insights', 'FAQs'],
+    title: "Resources",
+    links: ["Property Guide", "Market Insights", "FAQs"],
   },
 ];
 
 const socials = [
-  { icon: Facebook, label: 'Facebook' },
-  { icon: Instagram, label: 'Instagram' },
-  { icon: Twitter, label: 'Twitter' },
-  { icon: Linkedin, label: 'LinkedIn' },
-  { icon: Youtube, label: 'YouTube' },
+  { icon: Facebook, label: "Facebook" },
+  { icon: Instagram, label: "Instagram" },
+  { icon: Twitter, label: "Twitter" },
+  { icon: Linkedin, label: "LinkedIn" },
+  { icon: Youtube, label: "YouTube" },
 ];
 
 export default function Footer() {
   return (
     <footer className="bg-foreground text-white/70">
       <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-20">
-        {/* Top */}
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
-          {/* Brand */}
           <div className="col-span-2">
             <div className="flex flex-col leading-none">
               <span className="font-serif text-2xl font-bold text-white">
@@ -57,7 +55,6 @@ export default function Footer() {
               locations that matter to you.
             </p>
 
-            {/* Contact */}
             <div className="mt-6 flex flex-col gap-2.5 text-sm text-white/55">
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-accent" />
@@ -73,7 +70,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Socials */}
             <div className="mt-6 flex gap-3">
               {socials.map((s) => (
                 <a
@@ -88,7 +84,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Link Columns */}
           {columns.map((col) => (
             <div key={col.title}>
               <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white">
@@ -110,7 +105,6 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Bottom */}
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/45 sm:flex-row">
           <p>
             © {new Date().getFullYear()} Kalycor Real Estate. All rights

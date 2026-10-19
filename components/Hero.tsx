@@ -10,7 +10,6 @@ const trustItems = [
 export default function Hero() {
   return (
     <section className="relative flex min-h-[100vh] flex-col justify-center overflow-hidden">
-      {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src="https://images.pexels.com/photos/16573669/pexels-photo-16573669.jpeg?auto=compress&cs=tinysrgb&w=1920"
@@ -19,8 +18,6 @@ export default function Hero() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/95" />
       </div>
-
-      {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-32 pt-32 lg:px-8 lg:pb-44 lg:pt-40">
         <div className="max-w-3xl animate-fade-in-up">
           <span className="inline-block text-[11px] font-semibold uppercase tracking-eyebrow text-white/80">
@@ -34,7 +31,6 @@ export default function Hero() {
             locations that matter to you.
           </p>
 
-          {/* Trust Indicators */}
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
             {trustItems.map((item, i) => (
               <div
@@ -52,7 +48,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Floating Search */}
       <div className="relative z-20 w-full">
         <PropertySearch />
       </div>

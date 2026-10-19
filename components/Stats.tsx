@@ -1,8 +1,8 @@
 const stats = [
-  { value: '1,200+', label: 'Properties Listed' },
-  { value: '35+', label: 'Locations Covered' },
-  { value: '850+', label: 'Happy Clients' },
-  { value: '12+', label: 'Years of Expertise' },
+  { value: "1,200+", label: "Properties Listed" },
+  { value: "35+", label: "Locations Covered" },
+  { value: "850+", label: "Happy Clients" },
+  { value: "12+", label: "Years of Expertise" },
 ];
 
 export default function Stats() {
